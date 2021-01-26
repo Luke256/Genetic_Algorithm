@@ -1,5 +1,9 @@
 # Genetic_Algorithm
 Genetic Algorithm on OpenSiv3D
+```C++
+#include "GA.hpp"
+```
+で使えるようになります。
 
 ```C++
 Genetic_Algorithm(int32 NumAgents_,int32 Actions_,int32 Samples_=2,double MutationRate_=0.01,int32 RandomSample_=1);
