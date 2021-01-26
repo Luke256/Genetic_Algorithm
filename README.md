@@ -33,7 +33,7 @@ rewards:各個体の適応度の格納したArray配列<br>
 ## 例
 各遺伝子の総和が10に近づくようにするプログラムです
 ```C++
-# include <Siv3D.hpp>
+# include <Siv3D.hpp> // OpenSiv3D v0.4.3
 # include"GA.hpp"
 void Main(){
     int32 frame=0,Agents=1000,actions=10;
