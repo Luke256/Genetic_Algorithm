@@ -31,21 +31,25 @@ rewards:各個体の適応度の格納したArray配列<br>
 戻り値:その世代の中で最も優秀だった個体の遺伝子を返します。
 
 ## 例
+各遺伝子の総和が10に近づくようにするプログラムです
 ```C++
 # include <Siv3D.hpp>
 # include"GA.hpp"
 void Main(){
     int32 frame=0,Agents=1000,actions=10;
     Genetic_Algorithm GA(Agents, actions,5,0.05,10);
+    
     while(System::Update()){
         Array<double>rewards;
         double max=0;
+        
         for(auto i:step(Agents)){
             double sum=0;
             for(auto j:step(actions)) sum+=GA.Agents[i][j];
             rewards<<sum;
             max=Max(max,sum);
         }
+        
         ClearPrint();
         Print<<frame;
         Print<<max;
