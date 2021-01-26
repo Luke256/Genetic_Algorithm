@@ -5,7 +5,7 @@
 //
 
 #include "GA.hpp"
-#include <Siv3D.hpp>
+#include <Siv3D.hpp> // OpenSiv3D v0.4.3
 #include <queue>
 
 Genetic_Algorithm::Genetic_Algorithm(int32 NumAgents_,int32 Actions_,int32 Samples_,double MutationRate_,int32 RandomSample_):
