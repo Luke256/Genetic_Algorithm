@@ -58,7 +58,7 @@ Array<double> Genetic_Algorithm::reply(Array<double> rewards){
             second<<Elites[i_s][j];
         }
         
-        int32 index=Random(Actions);
+        int32 index=Random(Actions-1);
         for(auto j:step(index)){
             if(Random()<MutationRate)Agents[i][j]=Random();
             else Agents[i][j]=first[j];
